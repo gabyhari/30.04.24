@@ -1,19 +1,15 @@
-    class Calebe {
-        constructor (pinterest1, pinterest2) {
-            this.pinterest = pinterest; //variavel de interface
-            this.pinterest2 = pinterest2; //variavel de interface
-            //açoes
-        }
-
-        metodo1 () {
-            //açoes
-             window.open(this.site);
-             window.open(this.pinterest1);
-        }
-
-        metodo2 () {
-            //açoes
-            window.open(this.site);
-            window.open(this.pinterest2);
-        }
+class Calebe {
+    constructor (pinterest) {
+        this.site = site;
+        this.pinterest = pinterest;
     }
+
+    exibirSite () {
+        window.open(this.site);
+        window.open(this.pinterest);
+    }
+ }
+    var novoObjeto = new Objeto ("link do site que voce escolheu");
+
+    var novoCalebe = new Calebe ("https://br.pinterest.com/pin/580471839499221561/"); 
+    novoCalebe.exibirSite()
